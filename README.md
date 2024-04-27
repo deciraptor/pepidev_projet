@@ -6,7 +6,7 @@
 + 3
 
 1. un
-2. 2. deux
+2. deux
 
 Formation **GIT**
 Formation *GIT*
