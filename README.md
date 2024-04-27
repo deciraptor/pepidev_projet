@@ -1,5 +1,5 @@
 # Projet Pépi-Dèv'
-## Projet Choup Dessins & Nature
+## Projet Choup' Dessins & Nature
 
 + 1
 + 2
