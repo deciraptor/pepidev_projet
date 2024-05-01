@@ -22,7 +22,31 @@
         </header> <!--Ici se termine le mainHeader--> 
         <section id="pageContent">
             <main id="leftCol">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, saepe.</p>   
+                <h2>Contactez-moi</h2>
+                <p>Vous souhaitez passer une commande ou simplement entrer en contact avec moi ? Merci de compléter le formulaire suivant. Tous les champs sont requis.</p>   
+                <form id="frmContact" action="merci.html">
+                    <div>
+                        <div>
+                            <label for="fName">Prénom</label>
+                            <input type="text" name="fName" id="fName">
+                        </div>
+                        <div>
+                            <label for="lName">Nom</label>
+                            <input type="text" name="lName" id="lName">
+                        </div>
+                        <div>
+                            <label for="email">Votre e-mail</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message"></textarea> 
+                        </div>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
             </main> <!--Ici se termine leftCol-->
             <aside id="rightCol">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, saepe.</p>   
