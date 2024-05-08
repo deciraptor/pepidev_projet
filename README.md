@@ -1,7 +1,8 @@
 # Projet Pépi-Dèv'
-## Projet Choup' Dessins & Nature
+## Choup' Dessins & Nature
 
-+ 1
+### Objectifs 
++ Réaliser un site vitrine pour une artiste
 + 2
 + 3
 
@@ -14,8 +15,8 @@ Formation *GIT*
 
 ---
 ### Choix CSS 
-+ utilisation d'une feuille de style "normalize.css"
-+ les couleurs sont exprimées en rgb
++ utilisation d'une feuille de style *"normalize.css"*
++ les couleurs sont exprimées en **rgb**
 
 ---
 
