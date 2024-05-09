@@ -1,9 +1,72 @@
+/*import d'une police depuis le site Google Fonts ==========================================================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
+
+/*Styles génériques ========================================================================================================================*/
+
+:root {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+img {
+max-width: 100%; /*permet que les images ne dépassent jamais leur conteneur*/
+height: auto;
+}
+
+
+/*Styles concernant le body et donc tout le contenu ========================================================================================*/
+
 body {
-font-family: "Homemade Apple", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Homemade Apple", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    }
+
+.accessibility {
+    position: absolute;
+    left: -15000px;
+}
+
+
+/*Styles concernant le header ==============================================================================================================*/
+
+#mainHeader {
+    height: auto;
+}
+
+#logoRenard {
+    border-radius: 50%;
+    border: solid 5px grey;
+    width: 180px;
+    margin: 10px;
+}
+
+#mainNav a:link {
+    text-decoration: none;
 }
 
 h1 {
     color: green;
+    font-family: "Homemade Apple";
+}
+
+#menuToggle {
+    width: 40px;
+}
+
+/*Styles concernant le main ==================================================================================================================*/
+
+#pageContent {
+    padding: 100px 20px;
+}
+
+
+/*Styles concernant le footer ================================================================================================================*/
+
+#mainFooter {
+    text-align: center;
+    font-size: .7em;
 }
