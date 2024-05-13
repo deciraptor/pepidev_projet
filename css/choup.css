@@ -23,7 +23,7 @@ height: auto;
 body {
     font-family: "Homemade Apple", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
-    }
+}
 
 .accessibility {
     position: absolute;
@@ -34,33 +34,64 @@ body {
 /*Styles concernant le header ==============================================================================================================*/
 
 #mainHeader {
-    height: auto;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 150px 1fr 40px;
 }
 
 #logoRenard {
     border-radius: 50%;
-    border: solid 5px grey;
-    width: 180px;
+    border: solid 2px grey;
+    width: 80px;
     margin: 10px;
+}
+
+#mainNav {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    display: none;
+}
+
+#mainNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    display: flex;
 }
 
 #mainNav a:link {
     text-decoration: none;
 }
 
+#mainNav a:hover {
+    color: red;
+}
+
 h1 {
     color: green;
     font-family: "Homemade Apple";
+    font-size: 1em;
 }
 
 #menuToggle {
     width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
 }
 
 /*Styles concernant le main ==================================================================================================================*/
 
 #pageContent {
-    padding: 100px 20px;
+    padding: 400px 20px;
+    min-height: 100vh;
+    background-color: pink;
 }
 
 
@@ -69,4 +100,40 @@ h1 {
 #mainFooter {
     text-align: center;
     font-size: .7em;
+    background-color: brown;
+    height: auto;
+    padding: 20px 20px;
 }
+
+
+/*Styles soumis à critères """================================================================================================================*/
+/*Le code ci-dessus est pensé pour un smartphone et les media ci-dessous adaptent le contenu pour les écrans plus larges */
+
+@media screen and (min-width:768px) { /*pour les écrans > 768px*/
+    #menuToggle {
+        display: none;
+    }
+    #mainHeader {
+        grid-template-columns: 150px 250px 1fr;
+    }
+    #mainNav {
+        position: static;
+    }
+    #mainNav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:1024px) { /*pour les écrans > 1024px*/
+       #mainheader {
+        grid-template-columns: 150px 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1200px) { /*pour les écrans > 1200px*/
+    #mainheader {
+     grid-template-columns: 150px 1fr 1fr;
+ }
+}
+ 
