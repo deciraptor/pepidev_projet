@@ -40,7 +40,7 @@ body {
     width: 100%;
     background-color: aqua;
     display: grid;
-    grid-template-columns: 150px 1fr 40px;
+    grid-template-columns: 90px 1fr 40px;
 }
 
 #logoRenard {
@@ -53,16 +53,22 @@ body {
 #mainNav {
     position: absolute;
     width: 100%;
-    top: 40px;
+    top: 100px;
     display: none;
+    background-color: red;
+    text-align: center;
 }
 
 #mainNav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 5px;
     font-size: 1em;
-    display: flex;
+    display: block;
+}
+
+#mainNav li {
+    padding: 5px;
 }
 
 #mainNav a:link {
@@ -77,6 +83,8 @@ h1 {
     color: green;
     font-family: "Homemade Apple";
     font-size: 1em;
+    margin-top: 20px;
+    text-align: center;
 }
 
 #menuToggle {
@@ -84,6 +92,7 @@ h1 {
     height: 40px;
     background-color: transparent;
     border: none;
+    margin-top: 10px;
 }
 
 /*Styles concernant le main ==================================================================================================================*/
@@ -111,17 +120,21 @@ h1 {
 
 @media screen and (min-width:768px) { /*pour les écrans > 768px*/
     #menuToggle {
-        display: none;
+        display:none;
     }
     #mainHeader {
         grid-template-columns: 150px 250px 1fr;
     }
     #mainNav {
         position: static;
+        background-color: transparent;
+        display: block !important;
+        font-size: 1.6em;
     }
     #mainNav ul {
         flex-direction: row;
         justify-content: space-around;
+        display: flex;
     }
 }
 
