@@ -1,6 +1,5 @@
 /*import d'une police depuis le site Google Fonts ==========================================================================================*/
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Homemade+Apple&display=swap');
 
 /*Styles génériques ========================================================================================================================*/
 
@@ -21,7 +20,7 @@ height: auto;
 /*Styles concernant le body et donc tout le contenu ========================================================================================*/
 
 body {
-    font-family: "Homemade Apple", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Dosis, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
 }
 
@@ -34,18 +33,19 @@ body {
 /*Styles concernant le header ==============================================================================================================*/
 
 #mainHeader {
-    height: 200px;
+    height: 100px;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: aqua;
     display: grid;
-    grid-template-columns: 90px 1fr 40px;
+    grid-template-columns: 90px 1fr 45px;
+    border-bottom: solid 2px silver;
 }
 
 #logoRenard {
     border-radius: 50%;
-    border: solid 2px grey;
+    border: solid 2px orange;
     width: 80px;
     margin: 10px;
 }
@@ -55,7 +55,7 @@ body {
     width: 100%;
     top: 100px;
     display: none;
-    background-color: red;
+    background-color: silver;
     text-align: center;
 }
 
@@ -71,8 +71,10 @@ body {
     padding: 5px;
 }
 
-#mainNav a:link {
+#mainNav a {
     text-decoration: none;
+    color: green;
+    text-transform: none;
 }
 
 #mainNav a:hover {
@@ -83,7 +85,7 @@ h1 {
     color: green;
     font-family: "Homemade Apple";
     font-size: 1em;
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -92,17 +94,21 @@ h1 {
     height: 40px;
     background-color: transparent;
     border: none;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 /*Styles concernant le main ==================================================================================================================*/
 
 #pageContent {
-    padding: 400px 20px;
+    padding: 120px 20px;
     min-height: 100vh;
     background-color: pink;
 }
 
+#renard {
+    width: 40%;
+    margin: 10px;
+}
 
 /*Styles concernant le footer ================================================================================================================*/
 
