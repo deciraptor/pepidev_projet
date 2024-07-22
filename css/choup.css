@@ -1,5 +1,5 @@
 /*import d'une police depuis le site Google Fonts ==========================================================================================*/
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Zain:wght@200;300;400;700;800;900&display=swap');
 
 /*Styles génériques ========================================================================================================================*/
 
@@ -20,7 +20,7 @@ height: auto;
 /*Styles concernant le body et donc tout le contenu ========================================================================================*/
 
 body {
-    font-family: Dosis, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Zain, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
 }
 
@@ -37,10 +37,10 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: aqua;
+    background-color: white;
     display: grid;
     grid-template-columns: 90px 1fr 45px;
-    border-bottom: solid 2px silver;
+    border-bottom: solid 2px gainsboro;
 }
 
 #logoRenard {
@@ -48,6 +48,7 @@ body {
     border: solid 2px orange;
     width: 80px;
     margin: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
 #mainNav {
@@ -55,15 +56,15 @@ body {
     width: 100%;
     top: 100px;
     display: none;
-    background-color: silver;
-    text-align: center;
+    background-color: gainsboro;
+    text-align:end;
 }
 
 #mainNav ul {
     list-style: none;
     padding: 0;
     margin: 5px;
-    font-size: 1em;
+    font-size: 1.2em;
     display: block;
 }
 
@@ -73,7 +74,7 @@ body {
 
 #mainNav a {
     text-decoration: none;
-    color: green;
+    color: grey;
     text-transform: none;
 }
 
@@ -82,11 +83,12 @@ body {
 }
 
 h1 {
-    color: green;
+    color: grey;
     font-family: "Homemade Apple";
-    font-size: 1em;
-    margin-top: 40px;
+    font-size: 1.2em;
+    margin-top: 30px;
     text-align: center;
+    line-height: 1.6;
 }
 
 #menuToggle {
@@ -97,37 +99,61 @@ h1 {
     margin-top: 30px;
 }
 
+
 /*Styles concernant le main ==================================================================================================================*/
 
 #pageContent {
     padding: 120px 20px;
     min-height: 100vh;
-    background-color: pink;
+    /*background-color: pink;*/
+    color: grey;
+}
+
+#leftCol {
+    margin: 0 auto;
+    /*background-color: blueviolet;*/
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
 #renard {
     width: 40%;
     margin: 10px;
+    float: left;
+}
+
+#leftCol p {
+    text-align: justify;
+}
+
+#rightCol {
+    padding: 30px;;
 }
 
 /*Styles concernant le footer ================================================================================================================*/
 
 #mainFooter {
     text-align: center;
-    font-size: .7em;
-    background-color: silver;
+    /*background-color: gainsboro;*/
     height: auto;
-    padding: 20px 20px;
+    padding-top: 20px;
     display: grid;
+    color: grey;
+    border-top: solid 2px gainsboro;
+}
+
+#mainFooter h2 {
+    margin: 0;
 }
 
 #footerNav {
     /*position: absolute;*/
-    width: 100%;
     bottom: 100px;
     display: none;
-    background-color: silver;
+    background-color: gainsboro;
     text-align: center;
+    font-size: 1em;
 }
 
 #footerNav ul {
@@ -144,7 +170,7 @@ h1 {
 
 #footerNav a {
     text-decoration: none;
-    color: green;
+    color: gray;
     text-transform: none;
 }
 
@@ -153,11 +179,10 @@ h1 {
 }
 
 #menuArrow {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: transparent;
     border: none;
-    margin-top: 30px;
 }
 
 #logoInstagram {
