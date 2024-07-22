@@ -118,6 +118,46 @@ h1 {
     background-color: silver;
     height: auto;
     padding: 20px 20px;
+    display: grid;
+}
+
+#footerNav {
+    /*position: absolute;*/
+    width: 100%;
+    bottom: 100px;
+    display: none;
+    background-color: silver;
+    text-align: center;
+}
+
+#footerNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    font-size: 1em;
+    display: block;
+}
+
+#footerNav li {
+    padding: 5px;
+}
+
+#footerNav a {
+    text-decoration: none;
+    color: green;
+    text-transform: none;
+}
+
+#footerNav a:hover {
+    color: red;
+}
+
+#menuArrow {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    margin-top: 30px;
 }
 
 #logoInstagram {

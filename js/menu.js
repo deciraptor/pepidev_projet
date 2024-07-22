@@ -1,5 +1,11 @@
 $(document).ready(function(){
     $('#menuToggle').click(function(){
-        $('nav').stop(true, true).slideToggle()
+        $('#mainNav').stop(true, true).slideToggle()
+    })
+})
+
+$(document).ready(function(){
+    $('#menuArrow').click(function(){
+        $('#footerNav').stop(true, true).slideToggle()
     })
 })
