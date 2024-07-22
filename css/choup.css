@@ -115,11 +115,14 @@ h1 {
 #mainFooter {
     text-align: center;
     font-size: .7em;
-    background-color: brown;
+    background-color: silver;
     height: auto;
     padding: 20px 20px;
 }
 
+#logoInstagram {
+    width: 50px;
+}
 
 /*Styles soumis à critères """================================================================================================================*/
 /*Le code ci-dessus est pensé pour un smartphone et les media ci-dessous adaptent le contenu pour les écrans plus larges */
