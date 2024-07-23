@@ -29,6 +29,24 @@ body {
     left: -15000px;
 }
 
+/*début du bloc défilant*/
+/*
+.scrollRTL { 
+    padding-left: 150%; 
+    white-space: nowrap; 
+    animation: defilement-rtl 7s infinite linear;
+  }
+  
+@keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0); 
+    }
+    100% {
+      transform: translate3d(-150%,0,0);
+    }
+}
+    */
+/*fin du bloc défilant*/
 
 /*Styles concernant le header ==============================================================================================================*/
 
@@ -105,20 +123,18 @@ h1 {
 #pageContent {
     padding: 130px 20px;
     min-height: 100vh;
-    /*background-color: pink;*/
     color: grey;
 }
 
 #leftCol {
     margin: 0 auto;
-    /*background-color: blueviolet;*/
     padding: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
 #renard {
-    width: 40%;
+    width: 50%;
     margin: 10px;
     float: left;
 }
@@ -134,34 +150,44 @@ h1 {
 /*Styles concernant le footer ================================================================================================================*/
 
 #mainFooter {
-    text-align: center;
-    /*background-color: gainsboro;*/
     height: auto;
-    padding-top: 20px;
-    display: grid;
+    /*padding-top: 20px;*/
     color: grey;
     border-top: solid 2px gainsboro;
+    text-align: center;
+}
+
+#menuNav {
+    display: grid;
+    grid-template-columns: 75% 1fr;
+    padding: 10px 0px;
+    border-bottom: solid 2px gainsboro;
 }
 
 #mainFooter h2 {
-    margin: 0;
+    margin: 5px 0px;
+}
+
+#menuArrow {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
 #footerNav {
-    /*position: absolute;*/
-    bottom: 100px;
     display: none;
     background-color: gainsboro;
     text-align: center;
     font-size: 1em;
+    padding: 5px;
 }
 
 #footerNav ul {
     list-style: none;
     padding: 0;
-    margin: 5px;
-    font-size: 1em;
-    display: block;
+    margin: 0;
 }
 
 #footerNav li {
@@ -174,19 +200,12 @@ h1 {
     text-transform: none;
 }
 
-#footerNav a:hover {
-    color: red;
-}
 
-#menuArrow {
-    width: 35px;
-    height: 35px;
-    background-color: transparent;
-    border: none;
-}
 
 #logoInstagram {
     width: 35px;
+    height: 35px;
+    margin-top: 15px;
 }
 
 #mainFooter p {
