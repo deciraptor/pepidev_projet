@@ -5,7 +5,7 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
-    $('#menuArrow').click(function(){
+    $('#menuFrog').click(function(){
         $('#footerNav').stop(true, true).slideToggle()
     })
 })

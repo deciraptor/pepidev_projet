@@ -45,7 +45,7 @@ body {
       transform: translate3d(-150%,0,0);
     }
 }
-    */
+*/
 /*fin du bloc défilant*/
 
 /*Styles concernant le header ==============================================================================================================*/
@@ -121,7 +121,7 @@ h1 {
 /*Styles concernant le main ==================================================================================================================*/
 
 #pageContent {
-    padding: 130px 20px;
+    padding: 130px 20px 20px 20px;
     min-height: 100vh;
     color: grey;
 }
@@ -168,32 +168,42 @@ h1 {
     margin: 5px 0px;
 }
 
-#menuArrow {
+#menuFrog {
     width: 35px;
     height: 35px;
     background-color: transparent;
     border: none;
     padding: 0;
+    cursor: zoom-in;
 }
-
-/*debut test===============================*/
 
 .bounce {
     animation: bounce 2s ease infinite;
-  }
+}
   
-  @keyframes bounce {
-      70% { transform:translateY(0%); }
-      80% { transform:translateY(-15%); }
-      90% { transform:translateY(0%); }
-      95% { transform:translateY(-7%); }
-      97% { transform:translateY(0%); }
-      99% { transform:translateY(-3%); }
-      100% { transform:translateY(0); }
-  }
-
-
-/*fin test=================================*/
+@keyframes bounce {
+    70% { 
+        transform:translateY(0%); 
+    }
+    80% { 
+        transform:translateY(-15%); 
+    }
+    90% { 
+        transform:translateY(0%); 
+    }
+    95% { 
+        transform:translateY(-7%); 
+    }
+    97% { 
+        transform:translateY(0%); 
+    }
+    99% { 
+        transform:translateY(-3%); 
+    }
+    100% { 
+        transform:translateY(0); 
+    }
+}
 
 #footerNav {
     display: none;
@@ -222,11 +232,11 @@ h1 {
 #logoInstagram {
     width: 35px;
     height: 35px;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 #mainFooter p {
-    margin: 5px;
+    margin: 5px 5px 10px 5px;
 }
 
 /*Styles soumis à critères """================================================================================================================*/
