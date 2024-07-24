@@ -16,6 +16,25 @@ max-width: 100%; /*permet que les images ne dépassent jamais leur conteneur*/
 height: auto;
 }
 
+/*Classes ===================================================================================================================================*/
+
+.ajustUl {
+    padding: 0;
+    list-style: none;
+}
+
+#pageContent a {
+    text-decoration: none;
+    color: grey;
+    text-transform: none;
+}
+
+.squareContent {
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
 
 /*Styles concernant le body et donc tout le contenu ========================================================================================*/
 
@@ -176,6 +195,7 @@ h1 {
     cursor: zoom-in;
 }
 
+/*-----début du bloc rebond-----*/
 .bounce {
     animation: bounce 2s ease infinite;
 }
@@ -203,6 +223,7 @@ h1 {
         transform:translateY(0); 
     }
 }
+/*-----fin du bloc rebond-------*/
 
 #footerNav {
     display: none;
