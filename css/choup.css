@@ -29,12 +29,13 @@ body {
     left: -15000px;
 }
 
-/*début du bloc défilant*/
-/*
+/*-----début du bloc défilant-----*/
+
 .scrollRTL { 
-    padding-left: 150%; 
+    padding-left: 100%; 
     white-space: nowrap; 
     animation: defilement-rtl 7s infinite linear;
+    z-index: 1;
   }
   
 @keyframes defilement-rtl {
@@ -45,8 +46,8 @@ body {
       transform: translate3d(-150%,0,0);
     }
 }
-*/
-/*fin du bloc défilant*/
+
+/*-----fin du bloc défilant-------*/
 
 /*Styles concernant le header ==============================================================================================================*/
 
@@ -59,6 +60,7 @@ body {
     display: grid;
     grid-template-columns: 90px 1fr 45px;
     border-bottom: solid 2px gainsboro;
+    z-index: 2;
 }
 
 #logoRenard {
