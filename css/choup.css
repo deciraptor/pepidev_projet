@@ -36,6 +36,24 @@ height: auto;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
+/*-----début du bloc défilant-----*/
+.scrollRTL { 
+    padding-left: 50%;
+    white-space: nowrap; 
+    animation: defilement-rtl 7s infinite linear;
+    z-index: 1;
+  }
+  
+@keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0); 
+    }
+    100% {
+      transform: translate3d(-150%,0,0);
+    }
+}
+/*-----fin du bloc défilant-------*/
+
 /*Styles concernant le body et donc tout le contenu ========================================================================================*/
 
 body {
@@ -148,23 +166,6 @@ h1 {
     padding: 30px;;
 }
 
-/*-----début du bloc défilant-----*/
-.scrollRTL { 
-    padding-left: 50%;
-    white-space: nowrap; 
-    animation: defilement-rtl 7s infinite linear;
-    z-index: 1;
-  }
-  
-@keyframes defilement-rtl {
-    0% {
-      transform: translate3d(0,0,0); 
-    }
-    100% {
-      transform: translate3d(-150%,0,0);
-    }
-}
-/*-----fin du bloc défilant-------*/
 
 /*Styles concernant le footer ================================================================================================================*/
 
