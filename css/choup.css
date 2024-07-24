@@ -29,26 +29,6 @@ body {
     left: -15000px;
 }
 
-/*-----début du bloc défilant-----*/
-
-.scrollRTL { 
-    padding-left: 100%; 
-    white-space: nowrap; 
-    animation: defilement-rtl 7s infinite linear;
-    z-index: 1;
-  }
-  
-@keyframes defilement-rtl {
-    0% {
-      transform: translate3d(0,0,0); 
-    }
-    100% {
-      transform: translate3d(-150%,0,0);
-    }
-}
-
-/*-----fin du bloc défilant-------*/
-
 /*Styles concernant le header ==============================================================================================================*/
 
 #mainHeader {
@@ -149,11 +129,30 @@ h1 {
     padding: 30px;;
 }
 
+/*-----début du bloc défilant-----*/
+.scrollRTL { 
+    padding-left: 50%;
+    white-space: nowrap; 
+    animation: defilement-rtl 7s infinite linear;
+    z-index: 1;
+  }
+  
+@keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0); 
+    }
+    100% {
+      transform: translate3d(-150%,0,0);
+    }
+}
+/*-----fin du bloc défilant-------*/
+
+
+
 /*Styles concernant le footer ================================================================================================================*/
 
 #mainFooter {
     height: auto;
-    /*padding-top: 20px;*/
     color: grey;
     border-top: solid 2px gainsboro;
     text-align: center;
@@ -261,6 +260,9 @@ h1 {
         flex-direction: row;
         justify-content: space-around;
         display: flex;
+    }
+    .elfsight-app-bd52389a-3674-4129-b5e0-d2f3c54568ed {
+        display: none;
     }
 }
 
