@@ -16,6 +16,7 @@ max-width: 100%; /*permet que les images ne dépassent jamais leur conteneur*/
 height: auto;
 }
 
+
 /*classes ===================================================================================================================================*/
 
 .ajustUl {
@@ -62,6 +63,7 @@ height: auto;
 }
 /*-----fin du bloc défilant--------*/
 
+
 /*Styles concernant le body et donc tout le contenu ========================================================================================*/
 
 body {
@@ -73,6 +75,7 @@ body {
     position: absolute;
     left: -15000px;
 }
+
 
 /*Styles concernant le header ==============================================================================================================*/
 
@@ -145,12 +148,20 @@ h1 {
 }
 
 
-/*Styles concernant le main ==================================================================================================================*/
+/*Styles concernant le contenu ===============================================================================================================*/
 
 #pageContent {
     padding: 130px 20px 20px 20px;
     min-height: 100vh;
     color: grey;
+}
+
+main p {
+    text-align: justify;
+}
+
+aside p {
+    text-align: justify;
 }
 
 #leftCol {
@@ -267,6 +278,7 @@ h1 {
 #mainFooter p {
     margin: 5px 5px 10px 5px;
 }
+
 
 /*Styles soumis à critères """================================================================================================================*/
 /*Le code ci-dessus est pensé pour un smartphone et les media ci-dessous adaptent le contenu pour les écrans plus larges */
