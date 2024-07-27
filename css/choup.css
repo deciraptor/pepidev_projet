@@ -45,9 +45,26 @@ height: auto;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
+.article {
+    text-indent: 25px;
+}
+
+.button {
+    background: gainsboro;
+    color: grey;
+    border-radius: 50px;
+    padding: 20px 30px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+  }
+
+.button a {
+    padding-left: 34%;
+    font-size: 1.2em;
+}
+
 /*-----début du bloc défilant-----*/
 .scrollRTL { 
-    padding-left: 40%;
+    padding-left: 35%;
     white-space: nowrap; 
     animation: defilement-rtl 7s infinite linear;
     z-index: 1;
@@ -154,6 +171,10 @@ h1 {
     padding: 130px 20px 20px 20px;
     min-height: 100vh;
     color: grey;
+}
+
+#pageContent h2 {
+    text-align: center;
 }
 
 main p {
