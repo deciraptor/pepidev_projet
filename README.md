@@ -1,17 +1,18 @@
 # Projet Pépi-Dèv'
 ## Choup' Dessins & Nature
-
-### Objectifs 
+---
+### Objectifs du site
 + Réaliser un site vitrine pour une artiste
 + 2
 + 3
-
-1. un
-2. deux
-
-Formation **GIT**
-
-Formation *GIT*
+---
+### Rôles du site
+1. Etre un extension d'Insta
+2. Permettre une meilleur accessibilité au contenu (notamment ancien)
+---
+Vesion actuelle : **BETA**
+---
+*Améliorations à prévoir pour la version 1*
 
 ---
 ### Choix CSS 
