@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!--Balise pour déclarer le type, ici HTML 5-->
+<html lang="fr"> <!--Balise qui encadre l'intégralité du code avec un attribut qui précise la langue de la page-->
+    <head> <!--Balise d'en-tête de notre contenu-->
+        <meta charset="utf-8"> <!--Balise de métadonnée, ici on indique l'utilisation de caractères latins-->
+        <meta name="viewport" content="width=device-width", initial-scale="1.0"> <!--ici on rend le site responsive en adaptant la largeur des pages et en supprimant lz oom arrière prévu apr les navigateurs de smartphones-->
+        <meta name="description" content="Découvrez les dessins, les aquarelles et les articles de Choup', une artiste qui aime la nature et les animaux."> <!--Ici la description du contenu de la page qui apapraitra dans les moteurs de recherche-->
+        <title>Choup' Dessins &amp; Nature - Faire-Part</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/choup.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script><!--Script widget insta-->
+    </head>
+    <body> <!--Balise qui comprend le contenu de la page-->
+        <header id="mainHeader">
+            <a href="index.html">
+                <img src="images/logoRenard.jpg" alt="Logo représentant une tête de renard" id="logoRenard">
+            </a>
+            <h1>Choup' Dessins <br> &#128628; Nature</h1>
+            <nav id="mainNav">
+                <h2 class="accessibility">Menu principal</h2>
+                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu">Passer le menu</a></p>
+                <ul>
+                    <li><a href="index.html">Qui suis-je ?</a></li>
+                    <li><a href="mesIllustrations.html">Mes illustrations</a></li>
+                    <li><a href="monMateriel.html">Mon matériel</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="https://www.etsy.com/fr/shop/Choupdessinsetnature?ref=profile_header" target="_blank">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menuToggle"><img src="images/menuToggle.png" alt="Ouvrir / Fermer le menu"> </button> 
+        </header> <!--Ici se termine le mainHeader--> 
+        <section id="pageContent">
+            <a href="index.html">accueil &#47; </a><a href="blog.html">blog</a>
+            <h2><strong>Les refuges LPO</strong> <br>| 🪶🐦‍🦊🐸🪲🐛🦋 | <br>By Professeure Carrot 🥕</h2>
+            <main>
+                <article class="squareContent">
+                    <img src="images/blog/blogArticle5a.jpg" alt="Image d'illustration de l'article">
+                    <img src="images/blog/blogArticle5b.jpg" alt="Image d'illustration de l'article">
+                    <p class="article">Aujourd’hui, Professeure Carrot vous fait un petit cours d’introduction sur les refuges <a href="https://www.lpo.fr/">&#64;lpo_officiel</a> 💚. Sachez que ces refuges sont des terrains publics ou privés, et que même sur un balcon, ou dans une cour, on peut aider la biodiversité 🥰🐾🌱
+                        Chaque semaine, je vous ferai un post sur un des 15 gestes conseillés par la LPO 🪶
+                        Vous pouvez aussi retrouver plein d’infos sur leur site évidemment 🤗
+                        Alors, ça vous tente ?</p>
+                </article> <!--Fin du cinquième article-->
+            </main> <!--Ici se termine leftCol-->
+            <aside id="rightCol">
+                <img src="images/blog/blogArticle5c.jpg" alt="Image d'illustration de l'article">
+                <img src="images/blog/blogArticle5d.jpg" alt="Image d'illustration de l'article">
+                <img src="images/blog/blogArticle5e.jpg" alt="Image d'illustration de l'article">
+            </aside><!--Ici se termine rightCol-->
+        </section> <!--Ici se termine le pageContent-->
+        <footer id="mainFooter">
+            <div id="menuNav">
+                <h2>Mes contributions</h2>
+                <button id="menuFrog"><img class="bounce" src="images/frog4.png" alt="Ouvrir / Fermer le menu"></button>
+            </div>
+            <nav id="footerNav">
+                <ul>
+                    <li><a href="https://www.instagram.com/tamper.yummy/" target="_blank">&#8270; Tamper &amp; yummy &#8270;</a></li>
+                    <li><a href="https://www.celine-ethevenaux.fr/" target="_blank">&#8270; Céline Ethevenaux Psychologue &#8270;</a></li>
+                    <li><a href="https://www.pcformation73.fr/" target="_blank">&#8270; PC Formation 73 &#8270;</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.instagram.com/choup_dessins_et_nature/" target="_blank">
+                <img src="images/logoInstagramSimple.png" alt="Logo du site instagram" id="logoInstagram">
+            </a>
+            <p>&copy; Copyright 2024 Nataly</p>
+        </footer> <!--Ici se termine le mainFooter--> 
+    </body> <!--Ici se termine le contenu de la page-->
+</html>
