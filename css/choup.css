@@ -55,10 +55,10 @@ height: auto;
     border-radius: 50px;
     padding: 20px 30px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-  }
+}
 
 .button a {
-    padding-left: 34%;
+    padding-left: 36%;
     font-size: 1.2em;
 }
 
@@ -144,7 +144,7 @@ body {
 }
 
 #mainNav a:hover {
-    color: red;
+    opacity: 0.5;
 }
 
 h1 {
@@ -304,39 +304,89 @@ aside p {
 /*Styles soumis à critères """================================================================================================================*/
 /*Le code ci-dessus est pensé pour un smartphone et les media ci-dessous adaptent le contenu pour les écrans plus larges */
 
-@media screen and (min-width:768px) { /*pour les écrans > 768px*/
+@media screen and (min-width:768px) { /*=====pour les écrans > 768px=====*/
+    #mainHeader {
+        grid-template-columns: 150px 450px 1fr;
+    }
+    #logoRenard {
+        margin: 10px 40px;
+    }
+    #menuToggle {
+        margin-left: 100px;
+    }
+    #pageContent {
+        font-size: 1.5em;
+    }
+    #leftCol {
+        min-height: 400px;
+    }
+    #renard {
+        width: 35%;
+        margin: 0 30px;
+    }
+}
+
+@media screen and (min-width:1024px) { /*=====pour les écrans > 1024px=====*/
     #menuToggle {
         display:none;
     }
-    #mainHeader {
-        grid-template-columns: 150px 250px 1fr;
+    #mainheader {
+        grid-template-columns: 150px 1fr 1fr;
     }
     #mainNav {
         position: static;
         background-color: transparent;
         display: block !important;
-        font-size: 1.6em;
+        font-size: 1.2em;
     }
     #mainNav ul {
         flex-direction: row;
         justify-content: space-around;
         display: flex;
     }
-    .elfsight-app-bd52389a-3674-4129-b5e0-d2f3c54568ed {
-        display: none;
-    }
 }
 
-@media screen and (min-width:1024px) { /*pour les écrans > 1024px*/
-       #mainheader {
-        grid-template-columns: 150px 1fr 1fr;
-    }
-}
-
-@media screen and (min-width:1200px) { /*pour les écrans > 1200px*/
+@media screen and (min-width:1200px) { /*=====pour les écrans > 1200px=====*/
     #mainheader {
         grid-template-columns: 150px 1fr 1fr;
- }
+    }
+
+    #logoRenard {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        /*width: ;*/
+    }
+
+    #mainNav ul {
+        margin: 30px 0px;
+        /*font-size: 0.9em;*/
+    }
+
+    #pageContent {
+        display: flex;
+        padding: 130px 80px 20px;
+    }
+
+    #leftCol {
+        margin: 0;
+    }
+
+    #renard {
+        width: 180px;
+    }
+
+    #rightCol {
+        padding-left: 80px;
+    }
+
+    .scrollRTL {
+        animation: none;
+        padding: 0;
+    }
+
 
 /*-----début du bloc slider--------*/
     .slides {
