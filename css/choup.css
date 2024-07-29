@@ -62,6 +62,7 @@ height: auto;
     font-size: 1.2em;
 }
 
+
 /*-----début du bloc défilant-----*/
 .scrollRTL { 
     padding-left: 35%;
@@ -316,6 +317,7 @@ aside p {
     }
     #pageContent {
         font-size: 1.5em;
+        padding: 130px 50px 50px 50px;
     }
     #leftCol {
         min-height: 400px;
@@ -323,6 +325,20 @@ aside p {
     #renard {
         width: 35%;
         margin: 0 30px;
+    }
+    .elfsight-app-bd52389a-3674-4129-b5e0-d2f3c54568ed {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    .button {
+        width: 298px;
+        margin-left: 150px;
+        margin-top: 100px;
+    }
+    .button a {
+        text-align: center;
+        padding-left: 30%;
     }
 }
 
