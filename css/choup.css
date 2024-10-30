@@ -234,7 +234,7 @@ aside p {
     background-color: transparent;
     border: none;
     padding: 0;
-    cursor: zoom-in;
+    cursor: pointer;
 }
 
 /*-----début du bloc rebond-----*/
@@ -388,6 +388,9 @@ aside p {
     .button a {
         padding-left: 25%;
     }
+    #menuNav {
+        padding: 10px 350px;
+    }
 }
 
 @media screen and (min-width:1200px) { /*=====pour les écrans > 1200px=====*/
@@ -436,6 +439,9 @@ aside p {
     }
     .button {
         margin-left: 185px;
+    }
+    #menuNav {
+        padding: 10px 550px;
     }
 
 /*-----début du bloc slider-----*/
